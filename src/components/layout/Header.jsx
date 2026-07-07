@@ -35,11 +35,11 @@ export default function Header() {
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-2">
                 <Phone size={14} />
-                +91 123 456 7890
+                +91 971 758 0133
               </span>
               <span className="hidden md:flex items-center gap-2">
                 <MapPin size={14} />
-                Bangalore, India
+                Delhi, India
               </span>
             </div>
             <div className="flex items-center gap-4">

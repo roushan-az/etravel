@@ -109,24 +109,30 @@ export default function Footer() {
                 <Phone size={20} className="flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-white">Call Us</p>
-                  <p>+91 123 456 7890</p>
-                  <p>+91 098 765 4321</p>
+                  <p>+91 971 758 0133</p>
+                  <p>+91 946 786 8222</p>
+                  <p>+91 999 000 6680</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <Mail size={20} className="flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-white">Email Us</p>
-                  <p>info@eTourTravel.com</p>
-                  <p>support@eTourTravel.com</p>
+                  <p>tourplanners2@gmail.com</p>
+                  <p>tourplanners1@gmail.com</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-white">Office</p>
-                  <p>123 Travel Street,</p>
-                  <p>Bangalore, Karnataka 560001</p>
+                  <p className="font-semibold text-white">Regd Office</p>
+                  <p>SD-142, Jaipuria Sunrise Plaza, Indirapuram,</p>
+                  <p>Ghaziabad, Delhi-NCR-201010</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Branch Office</p>
+                  <p>Opposite Salih Sublime School,</p>
+                  <p>Rajbagh, Srinagar- 190008</p>
                 </div>
               </li>
             </ul>
