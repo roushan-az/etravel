@@ -52,7 +52,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-2xl">T</span>
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold">eTourTravel</h3>
+                <h3 className="text-xl font-display font-bold">Tour Planners</h3>
                 <p className="text-sm text-gray-400">Explore India</p>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-center md:text-left">
-              © 2026 eTourTravel India. All rights reserved. Built with ❤️ for Indian Tourism 🇮🇳
+              © 2026 Tour Planners. All rights reserved. Built with ❤️ for Indian Tourism 🇮🇳
             </p>
             <div className="flex gap-6 text-sm">
               <Link to="/privacy" className="text-gray-400 hover:text-white transition">Privacy Policy</Link>
