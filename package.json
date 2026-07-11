@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.13.0",
+    "baseline-browser-mapping": "^2.10.42",
+    "caniuse-lite": "^1.0.30001803",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^1.24.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.1",
-    "lucide-react": "^0.263.1",
-    "framer-motion": "^10.16.16"
+    "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
