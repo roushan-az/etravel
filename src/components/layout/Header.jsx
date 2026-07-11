@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Menu, X, MapPin, Phone, User } from 'lucide-react';
+import logoImg from '../../assets/logo.jpeg';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,9 +58,12 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-orange-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-2xl">T</span>
-            </div>
+            <img 
+              src={logoImg} 
+              alt="Tour Planners Logo" 
+              // Sets a taller height and allows the width to stretch naturally
+              className="h-16 w-auto object-contain group-hover:scale-110 transition-transform" 
+            />
             <div className="hidden md:block">
               <h1 className="text-2xl font-display font-bold text-gray-900">Tour Planners</h1>
               <p className="text-xs text-gray-600">My Personal Travel Agent</p>

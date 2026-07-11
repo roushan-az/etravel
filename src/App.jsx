@@ -17,6 +17,9 @@ import ManageStates from './pages/admin/ManageStates';
 import ManageCities from './pages/admin/ManageCities';
 import ManagePackages from './pages/admin/ManagePackages';
 import ManageBookings from './pages/admin/ManageBookings';
+import AboutPage from './components/layout/Aboutpage';
+import TermsPage from './components/layout/Termspage';
+import ContactPage from './components/layout/ContactPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,7 +53,10 @@ function App() {
             <Route path="/booking/:packageId" element={<BookingPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/confirmation" element={<ConfirmationPage />} />
-            
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+                        
             {/* Admin Routes */}
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/admin/states" element={<ManageStates />} />

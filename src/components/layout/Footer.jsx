@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
+import { socialLinks } from './Sociallinks';
+
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -60,18 +62,24 @@ export default function Footer() {
               Your trusted partner for discovering the incredible diversity of India. 36 States, 200+ Cities, 500+ Curated Packages.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
-                <Youtube size={20} />
-              </a>
+              {socialLinks.map((social) => {
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.name}
+                    className={`w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center transition ${social.color}`}
+                  >
+                  <img 
+                            src={social.icon} 
+                            alt={`${social.name} icon`} 
+                            className="w-5 h-5 object-contain invert" 
+                          />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -83,6 +91,7 @@ export default function Footer() {
               <li><Link to="/states" className="text-gray-400 hover:text-white transition">All States</Link></li>
               <li><Link to="/search" className="text-gray-400 hover:text-white transition">Search Packages</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition">About Us</Link></li>
+              <li><Link to="/terms" className="text-gray-400 hover:text-white transition">Terms & Conditions</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition">Contact</Link></li>
               <li><Link to="/admin" className="text-gray-400 hover:text-white transition">Admin Panel</Link></li>
             </ul>
@@ -149,7 +158,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-6 text-sm">
               <Link to="/privacy" className="text-gray-400 hover:text-white transition">Privacy Policy</Link>
-              <Link to="/terms" className="text-gray-400 hover:text-white transition">Terms of Service</Link>
+              <Link to="/terms" className="text-gray-400 hover:text-white transition">Terms & Conditions</Link>
               <Link to="/refund" className="text-gray-400 hover:text-white transition">Refund Policy</Link>
             </div>
           </div>
