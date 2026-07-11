@@ -228,7 +228,7 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-br from-primary-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="section-title">Why Choose eTourTravel?</h2>
+            <h2 className="section-title">Why Choose Tour Planners?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

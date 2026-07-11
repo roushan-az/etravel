@@ -61,8 +61,8 @@ export default function Header() {
               <span className="text-white font-bold text-2xl">T</span>
             </div>
             <div className="hidden md:block">
-              <h1 className="text-2xl font-display font-bold text-gray-900">eTourTravel</h1>
-              <p className="text-xs text-gray-600">Explore Incredible India 🇮🇳</p>
+              <h1 className="text-2xl font-display font-bold text-gray-900">Tour Planners</h1>
+              <p className="text-xs text-gray-600">My Personal Travel Agent</p>
             </div>
           </Link>
 
